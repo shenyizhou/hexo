@@ -1,0 +1,120 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+
+# Site
+title: 无主之地
+subtitle: 静存高远
+description: 静存高远
+author: Yizhou Shen
+language: zh-CN
+timezone: Asia/Shanghai
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: http://shenyizhou.github.io/
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+auto_space: true # 在中文和英文之间加入空格
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: true # 默认为false
+  tab_replace:
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY年MM月DD日
+time_format: HH:mm:ss
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 20
+pagination_dir: page
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: next
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  repository: git@github.com:shenyizhou/shenyizhou.github.io.git
+  branch: master
+
+avatar: /uploads/avatar.png
+
+duoshuo_shortname: shenyizhou
+duoshuo_hotartical: true
+
+google_analytics: UA-75479065-1
+
+jiathis: true
+
+# Swiftype Search Key
+swiftype_key: 2zYkpfCfgCQsM5MEzwEH
+
+mathjax: true
+
+since: 2015
+
+# Social Links
+# Key is the link label showing to end users.
+# Value is the target link (E.g. GitHub: https://github.com/iissnan)
+social:
+  github: https://github.com/shenyizhou
+  douban: http://douban.com/people/135239127
+  weibo: http://weibo.com/1709606462
+  twitter: https://twitter.com/qwerasdzxc12346
+  zhihu: http://www.zhihu.com/people/chen-lin-lu
+  #Others:
+
+# title
+links_title: Friends
+links:
+  Anber: http://sxl5513.github.io/
+  Annjun: https://annjun1224.github.io/
+  Boseny: https://boseny.me/
+  GorgeGao: http://junlegao.github.io/
+  Hexue: http://hx0702.github.io/
+  Junifer: http://yuan0.github.io/
+  Leslie: http://www.bigger.red/
+  Let there be light: http://zhicongchen.github.io/
+  Lovel: http://lcdlovel.github.io/
+  Marsman: https://guanjiexu.github.io/
+  Richardcao: http://richardcao.me/
+  Shenjie: http://forshenjie.github.io/
+  Signal: http://www.importcjj.com/
+  Terenceyu: http://www.terenceyu.top/
+  Xiaoke: https://xiaoke33i.github.io/
