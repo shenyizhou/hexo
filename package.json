@@ -6,9 +6,8 @@
     "version": "5.2.0"
   },
   "scripts": {
-    "start": "hexo s",
-    "build": "hexo clean & hexo d -g",
-    "publish": "hexo g & hexo d"
+    "dev": "hexo s",
+    "build": "hexo clean & hexo d -g"
   },
   "dependencies": {
     "hexo": "^5.2.0",
