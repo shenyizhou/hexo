@@ -13,9 +13,8 @@
 
 ## onFulfilled 和 onRejected
 
--   `onFulfilled` 或 `onRejected` `function`
--   `onFulfilled` 或 `onRejected` 是 会在微任务或宏任务中被异步调用
--   `onFulfilled` 或 `onRejected` 中没有 `this`
+-   `onFulfilled` 或 `onRejected` 都是 `function`（没有 `this`）
+-   `onFulfilled` 或 `onRejected` 会在微任务或宏任务中被异步调用
 
 ### onFulfilled
 
@@ -24,10 +23,13 @@
 
 ### onRejected
 
--   `onRejected` 会把 `promise` 的 `reason` 作为第一个回调参数
 -   `onRejected` 只能在 `promise` 变为 `rejected` 时被调用一次
+-   `onRejected` 会把 `promise` 的 `reason` 作为第一个回调参数
 
 ## then
 
--   `.then(onFulfilled, onRejected)`
+-   `promise2 = promise1.then(onFulfilled, onRejected)`
 -   `onFulfilled` 或 `onRejected` 不为 `function` 时会被忽略
+-   当一个 `promise` 变为 `fulfilled` 时，会按顺序递归下一层的 `onFulfilled`
+-   当一个 `promise` 变为 `rejected` 时，会按顺序递归下一层的 `onRejected`
+-   `then` 必须返回 `promise`
