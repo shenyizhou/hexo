@@ -13,7 +13,8 @@ function getPer(per = 50) {
                 (1 - Math.min(perUse, 99.99) / 100);
             return {
                 img,
-                p: perOppoLose
+                p: perOppoLose,
+                perWin
             };
         })
         .sort((a, b) => {
@@ -25,7 +26,7 @@ function getPer(per = 50) {
             }
             return 0;
         })
-        .forEach(({ img, p }) => {
-            console.log('%c+', img, `${(100 - p).toFixed(2)}%`);
+        .forEach(({ img, p, perWin }) => {
+            console.log('%c+', img, `${(100 - p).toFixed(2)}%`, `${perWin}%`);
         });
 }
