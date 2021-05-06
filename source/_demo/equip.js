@@ -1,6 +1,6 @@
 function getPer(per = 50) {
     [
-        ...document.getElementsByClassName('vxe-table--body')[3].children[1]
+        ...document.getElementsByClassName('vxe-table--body')[1].children[1]
             .children
     ]
         .map((child) => {
