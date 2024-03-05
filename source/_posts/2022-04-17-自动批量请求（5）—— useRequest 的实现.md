@@ -13,6 +13,8 @@ tags:
 
 况且现在已经是 hooks 的时代了，本文便引入了 useRequest 的概念。
 
+<!-- more -->
+
 ## useRequest 的使用
 
 我们对 useFetch 的使用习惯肯定是要符合我们对 hooks 的直觉，如此这般：

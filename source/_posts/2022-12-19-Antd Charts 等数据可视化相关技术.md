@@ -9,6 +9,8 @@ tags:
 
 大概涉及到的几个技术栈中，`Ant Design Charts` 是对 `G2Plot` 做了 React 化，`G2Plot` 是对 `G2` 做了API上的优化，`G2` 是对 `G` 做了图表的封装，而最底层的 `G` 是一套同时支持 Canvas 和 SVG 的 2D 渲染引擎。后三者都是 `AntV` 团队的作品，已开源，文档地址统一贴在文末。
 
+<!-- more -->
+
 ### G
 
 `G` 的实现原理就是在画布 `Canvas` 上增加图形 `Shape`，仿佛作画一般。
